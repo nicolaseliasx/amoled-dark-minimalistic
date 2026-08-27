@@ -164,6 +164,32 @@
   border-top-color: var(--custom-value-dark5) !important;
 }
 
+/* User profile card
+ * `.tsv-footer` is the native TS6 sidebar footer. Its internal markup is
+ * version-sensitive, so avatar, status, and voice controls intentionally keep
+ * their native selectors, actions, labels, and state rendering. Verify these
+ * descendants in TS6 DevTools after a client update before styling them further.
+ */
+.tsv-sidebar .tsv-footer {
+  --tsv-footer-bg: var(--custom-value-dark3) !important;
+  align-items: center !important;
+  background: var(--custom-value-dark3) !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 6px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 0 8px 8px !important;
+  min-width: 0 !important;
+  padding: 10px !important;
+}
+
+/* Keep the native footer divider from competing with the card border. */
+.tsv-sidebar .tsv-footer::before {
+  border-top: 0 !important;
+}
+
 /* Spacer — subtle dark line */
 .ts-server-tree-item-leaf.spacer .ts-server-tree-item-background-no-image,
 .ts-server-tree-item-leaf.spacer .tsv-item-highlight {

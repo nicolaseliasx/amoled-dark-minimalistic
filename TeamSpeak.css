@@ -34,7 +34,8 @@
 ::before {
   --tsv-tint: var(--custom-color-accent-light) !important;
   --tsv-tint2: var(--custom-color-accent-light) !important;
-  --tsv-separation-border: none !important;
+  /* Visible split between adjacent panels, e.g. calls and chat. */
+  --tsv-separation-border: 1px solid #3a3a3a !important;
   --tsv-control-handle-active-bg: var(--custom-color-accent-light) !important;
   --tsv-button-bg: var(--custom-value-dark5) !important;
   --tsv-button-hover-bg: var(--custom-value-dark7) !important;

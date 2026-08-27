@@ -175,6 +175,12 @@
   background: var(--custom-value-dark1) !important;
 }
 
+/* Server view — visible division between the voice tree and chat panel */
+.tsv-view {
+  border-right: 1px solid #3a3a3a !important;
+  box-sizing: border-box !important;
+}
+
 /* Hero button — no animation, stays minimal */
 .tsv-button-hero {
   animation: none !important;
